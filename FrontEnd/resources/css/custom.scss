@@ -1,23 +1,75 @@
 /* TAG GERAIS - INICIO */
-md-toolbar {
-  border-bottom: 2px solid #ccc;
-  background-color: white !important;
+body{
+  background-color: #fff !important;
+  width: 100%;
 }
 
 form {
-  width: 30%;
-  margin: 5% auto;
-  border: 2px solid #ccc;
+  width: 20%;
+  margin: 10% auto 0% auto;
+  border: 1px solid #00CCFF;
+  padding: 4% !important;
+  background-color: #f7f7f7;
+  height: auto;
 }
 
-h3 {
-  color: #BDBDBD;
+a {
+  text-decoration: none;
+}
+
+/* Definições de botão */
+.df-button {
+  text-transform: none !important;
+  color: #fff !important;
+  background-color: #00CCFF !important;
+  cursor: pointer;
+  width: 100%;
+}
+/* Definições de botão */
+
+/* Definições de texto */
+.df-text-hide{
+  overflow: hidden;
+}
+
+.df-text-center{
   text-align: center;
 }
+
+.df-title-font{
+  font-family:'Poppins', sans-serif;
+  font-size: 15%;
+  letter-spacing: .01em;
+  line-height: 1.4em;
+}
+
+.df-title-font{
+  font-family:'Poppins', sans-serif;
+  font-size: 24px;
+  letter-spacing: .01em;
+  line-height: 1.4em;
+}
+
+.df-text-p-md {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;
+  letter-spacing: .01em;
+  line-height: 1.4em;
+}
+
+.df-text-color-gd{
+  color: #00CCFF;
+}
+/* Definições de texto */
+
 /* TAG GERAIS - FIM */
 
-.logoLogin{
-  width: 20%;
-  height: 30%;
-  margin-bottom: 2%;
+.img-simbol-site{
+  background-image: url("../images/simbol_medio.png");
+  background-repeat: no-repeat;
+  width: 56px;
+  height: 54px;
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: -9999999px;
 }

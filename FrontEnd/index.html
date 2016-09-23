@@ -4,19 +4,32 @@
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link rel="stylesheet" href="resources/css/custom.scss">
+  <link rel="icon" type="image/png" sizes="96x96" href="resources/images/favicon-32x32.png">
+
+  <!-- FONTES -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+  <!-- FONTES -->
+
 </head>
 <body ng-app="myApp" layout="column">
 
-  <md-toolbar>
-    <img src="resources/images/logo.jpg" class="logoLogin"/>
-  </md-toolbar>
+<!--  <md-toolbar class="topo">
+    <img src="resources/images/logo.jpg" class="logo"/>
+  </md-toolbar> -->
 
   <div class="container" layout="cloumn" flex>
     <md-content id="conteudo" flex layout-padding>
 
-      <form name="FrmLogin" class="FrmLogin" md-theme="indigo">
+      <form name="FrmLogin" class="FrmLogin">
 
-          <h3 layout-padding>Bem-vindo ao goMed</h3>
+          <h1 class="df-text-center">
+              <a class="df-text-hide img-simbol-site" href="#">goMed</a>
+          </h1>
+
+          <p class="df-text-center df-title-font">Bem-vindo ao goMed</p>
 
           <md-input-container class="md-block">
             <label>E-mail:</label>
@@ -34,9 +47,14 @@
             </div>
           </md-input-container>
 
-          <md-button md-no-ink class="md-primary">Primary (md-noink)</md-button>
-
+          <md-button class="md-raised md-primary df-button">Fazer login</md-button>
       </form>
+
+      <p class="df-text-center df-text-p-md">
+        N&atilde;o conhece o goMed ainda?
+        <a href="#" class="df-text-center df-text-p-md df-text-color-gd">Experimente, &eacute; gr&aacute;tis!</a>
+      </p>
+      
     </md-content>
   </div>
 
