@@ -14,24 +14,21 @@
   <!-- FONTES -->
 
 </head>
-<body ng-app="myApp" layout="column">
+<body ng-app="myApp">
 
-<!--  <md-toolbar class="topo">
-    <img src="resources/images/logo.jpg" class="logo"/>
-  </md-toolbar> -->
+  <div layout-lg="row" layout-align-lg="center" flex-lg="100">
 
-  <div class="container" layout="cloumn" flex>
-    <md-content id="conteudo" flex layout-padding>
+    <md-content layout-lg="column" layout-align-lg="center" flex-lg="100">
 
       <form name="FrmLogin" class="FrmLogin">
 
           <h1 class="df-text-center">
-              <a class="df-text-hide img-simbol-site" href="#">goMed</a>
+              <a class="df-text-hidden img-simbol-site" href="#">goMed</a>
           </h1>
 
           <p class="df-text-center df-title-font">Bem-vindo ao goMed</p>
 
-          <md-input-container class="md-block">
+          <md-input-container class="md-block" layout-lg="column" layout-align-lg="center" flex-lg="100">
             <label>E-mail:</label>
             <input required name="txtEmail" ng-model="login.txtEmail">
             <div ng-messages="FrmLogin.txtEmail.$error">
@@ -39,7 +36,7 @@
             </div>
           </md-input-container>
 
-          <md-input-container class="md-block">
+          <md-input-container class="md-block" layout-lg="column" layout-align-lg="center" flex-lg="100">
             <label>Senha:</label>
             <input required name="txtSenha" ng-model="login.txtSenha">
             <div ng-messages="FrmLogin.txtSenha.$error">
@@ -47,15 +44,16 @@
             </div>
           </md-input-container>
 
-          <md-button class="md-raised md-primary df-button">Fazer login</md-button>
+          <md-button class="md-raised md-primary df-button" layout-lg="column" layout-align-lg="center">Fazer login</md-button>
       </form>
 
       <p class="df-text-center df-text-p-md">
         N&atilde;o conhece o goMed ainda?
-        <a href="#" class="df-text-center df-text-p-md df-text-color-gd">Experimente, &eacute; gr&aacute;tis!</a>
+        <a href="#" class="df-text-center df-text-p-md df-text-color-gd df-text-blond">Experimente, &eacute; gr&aacute;tis!</a>
       </p>
-      
+
     </md-content>
+
   </div>
 
   <!-- Angular Material requires Angular.js Libraries -->

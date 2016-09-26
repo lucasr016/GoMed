@@ -1,34 +1,21 @@
 /* TAG GERAIS - INICIO */
-body{
-  background-color: #fff !important;
-  width: 100%;
-}
-
-form {
-  width: 20%;
-  margin: 10% auto 0% auto;
-  border: 1px solid #00CCFF;
-  padding: 4% !important;
-  background-color: #f7f7f7;
-  height: auto;
-}
-
 a {
   text-decoration: none;
 }
 
 /* Definições de botão */
 .df-button {
+  width: 100%;
   text-transform: none !important;
   color: #fff !important;
   background-color: #00CCFF !important;
   cursor: pointer;
-  width: 100%;
+  margin: 0 auto;
 }
 /* Definições de botão */
 
 /* Definições de texto */
-.df-text-hide{
+.df-text-hidden{
   overflow: hidden;
 }
 
@@ -38,38 +25,48 @@ a {
 
 .df-title-font{
   font-family:'Poppins', sans-serif;
-  font-size: 15%;
-  letter-spacing: .01em;
-  line-height: 1.4em;
-}
-
-.df-title-font{
-  font-family:'Poppins', sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   letter-spacing: .01em;
   line-height: 1.4em;
 }
 
 .df-text-p-md {
   font-family: 'Source Serif Pro', serif;
-  font-size: 20px;
+  font-size: 1.15em;
   letter-spacing: .01em;
-  line-height: 1.4em;
+  line-height: 2.4em;
 }
 
 .df-text-color-gd{
   color: #00CCFF;
 }
+
+.df-text-blond{
+  font-weight: bold;
+}
 /* Definições de texto */
 
 /* TAG GERAIS - FIM */
 
+
+/* TELA DE LOGIN - INICIO */
+.FrmLogin {
+  width: 15.625%; /*300px / 1919 */
+  border: 2px solid #00CCFF;
+  padding: 4% !important;
+  background-color: #f7f7f7;
+  margin: 10% auto 0% auto;
+  box-shadow: 5px 5px 5px 6px #888888;
+}
+
 .img-simbol-site{
-  background-image: url("../images/simbol_medio.png");
-  background-repeat: no-repeat;
   width: 56px;
   height: 54px;
+  background-image: url("../images/simbol_medio.png");
+  background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
   text-indent: -9999999px;
 }
+
+/* TELA DE LOGIN - FIM */
