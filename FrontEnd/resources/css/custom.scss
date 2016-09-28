@@ -24,15 +24,15 @@ a {
 }
 
 .df-title-font{
-  font-family:'Poppins', sans-serif;
-  font-size: 1.2em;
+  font-family:'Sanchez', serif;
+  font-size: 1.5em;
   letter-spacing: .01em;
   line-height: 1.4em;
 }
 
 .df-text-p-md {
   font-family: 'Source Serif Pro', serif;
-  font-size: 1.0em;
+  font-size: 1.2em;
   letter-spacing: .01em;
   line-height: 2.4em;
 }
@@ -51,7 +51,8 @@ a {
 
 /* TELA DE LOGIN - INICIO */
 .FrmLogin {
-  width: 60%; /*300px / 1919 */
+  width: 26.04166666666667%; /*300px / 1919 */
+  height: 41.66666666666667%;
   border: 2px solid #00CCFF;
   padding: 10% !important;
   background-color: #f7f7f7;

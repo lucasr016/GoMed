@@ -1,4 +1,4 @@
-<html lang="en" >
+<html lang="pt" >
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
@@ -11,16 +11,17 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
   <!-- FONTES -->
 
 </head>
 <body ng-app="myApp">
 
-  <div layout-lg="row" layout-align-lg="center" flex-lg="100">
+  <div layout-xl="row" layout-align-xl="center" flex-xl="100">
 
-    <md-content layout-lg="column" layout-align-lg="center" flex-lg="35">
+    <md-content layout-xl="column" layout-align-xl="center" flex-xl="100">
 
-      <form name="FrmLogin" class="FrmLogin">
+      <form name="FrmLogin" class="FrmLogin" flex-xl="50">
 
           <h1 class="df-text-center">
               <a class="df-text-hidden img-simbol-site" href="#">goMed</a>
@@ -28,7 +29,7 @@
 
           <p class="df-text-center df-title-font">Bem-vindo ao goMed</p>
 
-          <md-input-container class="md-block" layout-lg="column" layout-align-lg="center" flex-lg="100">
+          <md-input-container class="md-block" layout-xl="column" layout-align-xl="center" flex-xl="100">
             <label>E-mail:</label>
             <input required name="txtEmail" ng-model="login.txtEmail">
             <div ng-messages="FrmLogin.txtEmail.$error">
@@ -36,7 +37,7 @@
             </div>
           </md-input-container>
 
-          <md-input-container class="md-block" layout-lg="column" layout-align-lg="center" flex-lg="100">
+          <md-input-container class="md-block" layout-xl="column" layout-align-xl="center" flex-xl="100">
             <label>Senha:</label>
             <input required name="txtSenha" ng-model="login.txtSenha">
             <div ng-messages="FrmLogin.txtSenha.$error">
@@ -44,7 +45,7 @@
             </div>
           </md-input-container>
 
-          <md-button class="md-raised md-primary df-button" layout-lg="column" layout-align-lg="center">Fazer login</md-button>
+          <md-button class="md-raised md-primary df-button" layout-xl="column" layout-align-xl="center">Fazer login</md-button>
       </form>
 
       <p class="df-text-center df-text-p-md">
@@ -67,7 +68,7 @@
 
   <!-- Angular Material Library -->
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.js"></script>
-  <script src="resources/js/app.js"></script>
+  <script src="app/app.js"></script>
   <!-- Your application bootstrap  -->
 
 
