@@ -10,7 +10,8 @@ a {
   color: #fff !important;
   background-color: #00CCFF !important;
   cursor: pointer;
-  margin: 0 auto;
+  margin: 0 auto 5% auto;
+  position: relative;
 }
 /* Definições de botão */
 
@@ -30,19 +31,44 @@ a {
   line-height: 1.4em;
 }
 
-.df-text-p-md {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 1.2em;
-  letter-spacing: .01em;
-  line-height: 2.4em;
+.df-text-p-pq {
+  font-family: 'Roboto Condensed', serif;
+  font-size: 1em;
+  //letter-spacing: .01em;
+  line-height: 1.25em;
 }
 
-.df-text-color-gd{
+.df-text-p-md {
+  font-family: 'Roboto Condensed', serif;
+  font-size: 1.5em;
+  //letter-spacing: .01em;
+  line-height: 1.25em;
+}
+
+.df-text-p-gd {
+  font-family: 'Roboto Condensed', serif;
+  font-size: 2.4em;
+  //letter-spacing: .01em;
+  line-height: 1.25em;
+}
+
+.df-text-span-md {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.75em;
+  //letter-spacing: .01em;
+  line-height: 1.25em;
+}
+
+.df-text-color-logo{
   color: #00CCFF;
 }
 
 .df-text-blond{
   font-weight: bold;
+}
+
+.df-text-color-white{
+  color: white;
 }
 /* Definições de texto */
 
@@ -50,15 +76,21 @@ a {
 
 
 /* TELA DE LOGIN - INICIO */
+
+.bg-color-login{
+  //background-color: #607D8B !important;
+  background-color: rgba(96, 125, 139, 0.3) !important;
+}
+
+.div-tl-login{
+  background-color: #607D8B !important;
+  box-shadow: 0px 0px 25px 10px;
+  padding: 5%;
+}
+
 .FrmLogin {
-  width: 26.04166666666667%; /*300px / 1919 */
-  height: 41.66666666666667%;
-  border: 2px solid #00CCFF;
+  width: 80%;
   padding: 10% !important;
-  background-color: #f7f7f7;
-  margin: 5% auto 0% auto;
-  box-shadow: 5px 5px 5px 6px #888888;
-  overflow: hidden;
 }
 
 .img-simbol-site{
@@ -70,5 +102,4 @@ a {
   vertical-align: middle;
   text-indent: -9999999px;
 }
-
 /* TELA DE LOGIN - FIM */

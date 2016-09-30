@@ -7,55 +7,66 @@
   <link rel="icon" type="image/png" sizes="96x96" href="resources/images/favicon-32x32.png">
 
   <!-- FONTES -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed|Roboto|Sanchez|Source+Serif+Pro|Poppins|Muli|Lato" rel="stylesheet">
   <!-- FONTES -->
 
 </head>
-<body ng-app="myApp">
+<body layout="column" ng-app="myApp" flex>
 
-  <div layout-xl="row" layout-align-xl="center" flex-xl="100">
+  <md-content layout="row" layout-align="center center" class="bg-color-login" flex>
 
-    <md-content layout-xl="column" layout-align-xl="center" flex-xl="100">
+    <div class="div-tl-login" layout="row">
 
-      <form name="FrmLogin" class="FrmLogin" flex-xl="50">
+      <div class="div-lf-login" layout="column" flex="60" flex-xs="0" layout-align="start center" layout-padding hide show-gt-xs>
+        <p class="df-text-p-gd df-text-color-white df-text-blond" layout="column" flex="10">Ainda n&atilde;o conhece o &nbsp;goMed?</p>
+        <p class="df-text-p-md df-text-color-white" layout="column" flex="90">
+          Deixe-nos te surpreender organizando e trazendo melhores rendimentos para seu consult&oacute;rio.</br>
+          <a href="#" class="df-text-p-pq df-text-color-logo df-text-blond" title="Experimente, &eacute; gr&aacute;tis!">Experimente, &eacute; gr&aacute;tis!</a>
+        </p>
 
-          <h1 class="df-text-center">
-              <a class="df-text-hidden img-simbol-site" href="#">goMed</a>
-          </h1>
+      </div>
 
-          <p class="df-text-center df-title-font">Bem-vindo ao goMed</p>
+      <div class="div-rg-login" layout="row" flex="40" flex-xs="100" layout-padding layout-align="center center">
 
-          <md-input-container class="md-block" layout-xl="column" layout-align-xl="center" flex-xl="100">
-            <label>E-mail:</label>
-            <input required name="txtEmail" ng-model="login.txtEmail">
-            <div ng-messages="FrmLogin.txtEmail.$error">
-              <div ng-message="required">Este campo &eacute; obrigat&oacute;io</div>
-            </div>
-          </md-input-container>
+        <md-card class="card-login">
 
-          <md-input-container class="md-block" layout-xl="column" layout-align-xl="center" flex-xl="100">
-            <label>Senha:</label>
-            <input required name="txtSenha" ng-model="login.txtSenha">
-            <div ng-messages="FrmLogin.txtSenha.$error">
-              <div ng-message="required">Este campo &eacute; obrigat&oacute;io</div>
-            </div>
-          </md-input-container>
+          <form name="FrmLogin" class="FrmLogin">
 
-          <md-button class="md-raised md-primary df-button" layout-xl="column" layout-align-xl="center">Fazer login</md-button>
-      </form>
+            <h1 class="df-text-center">
+                <a class="df-text-hidden img-simbol-site" href="#" title="goMed">goMed</a>
+            </h1>
 
-      <p class="df-text-center df-text-p-md">
-        N&atilde;o conhece o goMed ainda?
-        <a href="#" class="df-text-center df-text-p-md df-text-color-gd df-text-blond">Experimente, &eacute; gr&aacute;tis!</a>
-      </p>
+            <p class="df-text-center df-title-font">Bem-vindo ao goMed</p>
 
-    </md-content>
+            <md-input-container class="md-block" layout="column">
+              <label>E-mail:</label>
+              <input required name="txtEmail" ng-model="login.txtEmail">
+              <div ng-messages="FrmLogin.txtEmail.$error">
+                <div ng-message="required">Este campo &eacute; obrigat&oacute;io</div>
+              </div>
+            </md-input-container>
 
-  </div>
+            <md-input-container class="md-block">
+              <label>Senha:</label>
+              <input required name="txtSenha" ng-model="login.txtSenha">
+              <div ng-messages="FrmLogin.txtSenha.$error">
+                <div ng-message="required">Este campo &eacute; obrigat&oacute;io</div>
+              </div>
+            </md-input-container>
+
+            <md-button class="md-raised md-primary df-button" title="Acessar o goMed.">Fazer login</md-button></br>
+
+            <a href="#" class="df-text-p-pq df-text-color-logo df-text-center lk-recup-senha" title="Clique aqui para recuperar sua senha." layout="column" flex>Recuperar senha?</a>
+
+          </form>
+
+        </md-card>
+
+      </div>
+
+    </div>
+
+  </md-content>
 
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
