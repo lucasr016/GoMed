@@ -3,12 +3,18 @@ a {
   text-decoration: none;
 }
 
+/* Definições de cores */
+.bd-color-logo{
+  color: #0086C1 !important;
+}
+/* Definições de cores */
+
 /* Definições de botão */
 .df-button {
   width: 100%;
   text-transform: none !important;
   color: #fff !important;
-  background-color: #00CCFF !important;
+  background-color: #448AFF !important;
   cursor: pointer;
   margin: 0 auto 5% auto;
   position: relative;
@@ -60,7 +66,7 @@ a {
 }
 
 .df-text-color-logo{
-  color: #00CCFF;
+  color: #448AFF;
 }
 
 .df-text-blond{
