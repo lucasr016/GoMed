@@ -11,7 +11,7 @@
   <!-- FONTES -->
 
 </head>
-<body class="bd-login" layout="row" ng-app="myApp">
+<body class="bd-login" layout="row" ng-app="myApp" data-ng-controller="LoginController as login">
 
   <md-content class="div-tl-login bg-color-login" layout="row" flex="100" layout-margin layout-align="center center">
 
@@ -45,7 +45,6 @@
         <form name="FrmLogin"
                 class="FrmLogin"
                 novalidate
-                ng-submit="login.autenticacao()"
                 flex>
 
           <h1 class="df-text-center">
@@ -72,7 +71,8 @@
 
           <md-button class="md-raised md-primary df-button"
                      title="Acessar o goMed."
-                     ng-disabled="customerForm.$invalid">
+                     ng-disabled="customerForm.$invalid"
+                     data-ng-click="login.ClickMe()">
                      Fazer login
           </md-button></br>
 
