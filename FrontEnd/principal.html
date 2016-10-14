@@ -33,30 +33,37 @@
 </head>
 <body class="bd-principal" layout="column" ng-app="myApp">
 
-  <md-toolbar>
+  <md-toolbar class="md-primary md-medium-tall" layout="column" layout-align="center">
 
-    <span>goMed</span>
+    <div class="md-toolbar-tools">
+
+      <md-button class="md-icon-button" aria-label="Settings" ng-disabled="false">
+        <i class="material-icons">menu</i>
+      </md-button>
+
+      <h2 layout-margin>
+        <a href="#" title="goMed"><img src="resources/images/teste.png"/></a>
+      </h2>
+
+      <md-input-container class="md-primary" layout-padding flex layout-align="center end">
+        <i class="material-icons">search</i>
+        <input type="search" name="txtEmail" ng-model="principal.txtSearch">
+      </md-input-container>
+
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="More">
+        <i class="material-icons">more_vert</i>
+      </md-button>
+
+    </div>
 
   </md-toolbar>
 
-  <div flex layout="row">
+  <div flex layout="row" layout-padding>
 
-    <md-sidenav flex="15" md-is-locked-open="true" class="bd-color-logo" flex-offset="5">
+    <md-sidenav flex="15" md-is-locked-open="true" class="bd-color-logo">
 
       <md-container>
-
-        <md-menu-bar>
-          <md-menu>
-            <md-menu-item>Gomed</md-menu-item>
-            <md-menu-content>
-              <md-menu-item>Item 1</md-menu-item>
-              <md-menu-item>Item 2</md-menu-item>
-              <md-menu-divider></md-menu-divider>
-              <md-menu-item>Item 3</md-menu-item>
-              <md-menu-item>Item 4</md-menu-item>
-            </md-menu-content>
-          </md-menu>
-        </md-menu-bar>
 
       </md-container>
 
