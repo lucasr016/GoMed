@@ -35,19 +35,19 @@
 
   <md-toolbar class="md-primary md-medium-tall" layout="column" layout-align="center">
 
-    <div class="md-toolbar-tools">
+    <div class="md-toolbar-tools tl-principal-topo" layout="row">
 
-      <md-button class="md-icon-button" aria-label="Settings" ng-disabled="false">
+      <md-button class="md-icon-button" aria-label="Settings" ng-disabled="false" flex="5">
         <i class="material-icons">menu</i>
       </md-button>
 
-      <h2 layout-margin>
+      <h2 layout-margin flex>
         <a href="#" title="goMed"><img src="resources/images/teste.png"/></a>
       </h2>
 
-      <md-input-container class="md-primary" layout-padding flex layout-align="center end">
-        <i class="material-icons">search</i>
-        <input type="search" name="txtEmail" ng-model="principal.txtSearch">
+      <md-input-container class="tl-principal-search" layout="row" flex>
+        <i class="material-icons" flex="5">search</i>
+        <input type="search" name="txtEmail" ng-model="principal.txtSearch" flex="95">
       </md-input-container>
 
       <span flex></span>

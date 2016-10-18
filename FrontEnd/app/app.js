@@ -29,7 +29,7 @@
 
 /*        'contrastDarkColors': ['50', '100', //hues which contrast should be 'dark' by default
          '200', '300', '400', '700', 'A100'],*/
-        'contrastLightColors': undefined    // could also specify this if default was 'dark'
+        'contrastLightColors': 'dark'    // could also specify this if default was 'dark'
       });
 
       $mdThemingProvider
